@@ -1,0 +1,170 @@
+.contact {
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 48px;
+
+    }
+
+    &__dash {
+        max-width: 100%;
+    }
+
+    &__top-textbox {
+        margin-top: 48px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__top-heading {
+        margin: 0;
+        max-width: 350px;
+        font-family: 'Ibarra Real Nova';
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: -0.357143px;
+        color: #33323D;
+    }
+
+    &__top-desc {
+        margin: 0;
+        max-width: 635px;
+        font-family: 'Public Sans';
+        font-size: 16px;
+        line-height: 30px;
+        color: #33323D;
+        opacity: 0.8;
+        margin-bottom: 24px;
+    }
+
+    &__sociallist {
+       margin: 0;
+       padding: 0;
+       display: flex;
+
+    }
+
+    &__sociallink {
+        text-decoration: none;
+    }
+
+    &__item + &__item {
+
+        margin-left: 15px;
+    }
+
+    // CONTACT BOTTOM
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 108px;
+    }
+
+    &__bottom-heading {
+        margin: 0;
+        font-family: Ibarra Real Nova;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: -0.357143px;
+        color: #33323D;
+    }
+
+    &__bottom-right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form {
+        width: 635px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        margin-bottom: 10px;
+        font-family: 'Public Sans';
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 30px;
+        color: #33323D;
+        opacity: 0.8;
+
+    }
+
+    &__input {
+        background: lightgrey;
+        border: transparent;
+        padding: 9px 16px;
+        font-family: 'Public Sans';
+        font-size: 13px;
+        line-height: 30px;
+         color: #33323D;
+         margin-bottom: 24px;
+    }
+
+    &__textarea {
+        background: lightgrey;
+        border: transparent;
+        padding: 14px 16px;
+        margin-bottom: 24px;
+
+    }
+
+    &__textarea::placeholder {
+        font-family: 'Public Sans';
+        font-size: 13px;
+        line-height: 30px;
+        color: #33323D;
+        opacity: 0.4;
+    }
+
+    &__btn {
+        color: white;
+        background: #203A4C;
+    }
+
+}
+
+@media only screen and(max-width:950px){
+.contact{
+    &__form {
+        width: 473px;
+    }
+
+ }
+
+}
+
+@media only screen and(max-width:768px){
+    .contact{
+
+        &__top-textbox {
+            flex-direction: column;
+        }
+
+        &__top-heading {
+            margin-bottom: 24px;
+        }
+
+        &__bottom {
+            flex-direction: column;
+
+        }
+
+        &__bottom-heading {
+            margin-bottom: 24px;
+        }
+
+        &__form {
+            width: 100%;
+        }
+
+     }
+
+}
