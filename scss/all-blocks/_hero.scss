@@ -1,0 +1,180 @@
+.hero {
+
+    &__container {
+        padding: 21% 49% 0px 0px;
+        background-image: url("../images/hero-bg.jpg") ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 50px;
+
+
+
+
+
+
+    }
+
+    &__item {
+        max-width:445px ;
+        padding-top: 56px;
+        padding-right: 55px;
+        background-color: white;
+    }
+    &__heading {
+        margin: 0;
+        margin-bottom: 53px;
+        font-family: 'Ibarra Real Nova';
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 50px;
+        letter-spacing: -0.446429px;
+        color: #33323D;
+    }
+
+    &__btn {
+        border: transparent;
+        padding: 0;
+    }
+
+}
+
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx){
+
+    .hero__container{
+        background-image: url("../images/hero-bg@2x.jpg");
+
+    }
+
+}
+
+@media only screen and(max-width:1096px){
+    .hero {
+      &__container {
+          padding-top: 25%;
+      }
+      &__item {
+        max-width: 509px;
+        padding-top: 54px;
+        padding-right: 35px;
+      }
+    }
+
+}
+
+@media only screen and(max-width:933px){
+    .hero {
+        &__container {
+            padding-top: 30%;
+        }
+        &__item {
+            max-width: 539px;
+
+        }
+
+        &__heading {
+            font-size: 40px;
+            line-height: 42px;
+
+        }
+    }
+
+}
+
+@media only screen and(max-width:768px){
+    .hero {
+        &__container {
+            padding-top: 30%;
+        }
+        &__item {
+            width: 600px;
+            padding-top: 54px;
+            padding-right: 35px;
+
+        }
+
+        &__heading {
+            font-size: 40px;
+            line-height: 42px;
+            letter-spacing: -0.357143px;
+
+        }
+    }
+
+}
+
+@media only screen and(max-width:630px){
+    .hero {
+        &__container {
+            padding-top: 35%;
+        }
+
+
+        &__heading {
+            font-size: 33px;
+            line-height: 33px;
+
+
+        }
+    }
+
+}
+
+@media only screen and(max-width:568px){
+    .hero {
+        &__container {
+            position: relative;
+            padding: 29% 0%;
+            margin-bottom: 300px;
+        }
+        &__item {
+            position: absolute;
+            top: 100%;
+            max-width: 400px;
+
+
+
+        }
+
+        &__heading {
+            font-size: 33px;
+            line-height: 33px;
+
+
+        }
+    }
+}
+
+@media only screen and(max-width:420px){
+    .hero {
+        &__container {
+            padding: 29% 0%;
+            margin-bottom: 300px;
+        }
+        &__item {
+            padding-top: 20px;
+            position: absolute;
+            top: 100%;
+            max-width: 300px;
+
+
+
+        }
+
+        &__heading {
+            width: 266px;
+            font-size: 33px;
+            line-height: 33px;
+            margin-bottom: 30px;
+
+
+        }
+    }
+}
